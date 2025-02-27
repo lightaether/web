@@ -1,0 +1,14 @@
+/* Cell.css */
+/* 100px X 100px square, with a 1px solid grey border*/
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid grey;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cell.active {
+    background-color: black;
+  }
