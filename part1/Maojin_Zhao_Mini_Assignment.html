@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex's Website</title>
+<style>
+  body {
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "sidebar main sidebar2"
+      "footer footer footer";
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100vh;
+    gap: 10px;
+  }
+  header {
+    grid-area: header;
+    background-color: #f8c9d1;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #sidebar {
+    grid-area: sidebar;
+    background-color: #f8c9d1;
+    border: 1px solid #333;
+  }
+  main {
+    grid-area: main;
+    background-color: #f8c9d1;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #sidebar2 {
+    grid-area: sidebar2;
+    background-color: #f8c9d1;
+    border: 1px solid #333;
+  }
+  footer {
+    grid-area: footer;
+    background-color: #f8c9d1;
+    border: 1px solid #333;
+  }
+  .box {
+    width: 60px;
+    height: 60px;
+    background-color: #e939f6;
+    transition: all 0.5s ease;
+  }
+  .box:hover {
+    width: 120px;
+    height: 120px;
+    background-color: #6d120c;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Alex's Website</h1>
+  </header>
+  <aside id="sidebar">
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">Photos</a></li>
+      <li><a href="#">Secret Project</a></li>
+    </ul>
+  </aside>
+  <main>
+    <div class="box"></div>
+  </main>
+  <aside id="sidebar2"></aside>
+  <footer></footer>
+</body>
+</html>
